@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nom:</b>
+  <%= @temoignage.nom %>
+</p>
+
+<p>
+  <b>Prenom:</b>
+  <%= @temoignage.prenom %>
+</p>
+
+<p>
+  <b>Fbid:</b>
+  <%= @temoignage.fbid %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @temoignage.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_temoignage_path(@temoignage) %> |
+<%= link_to 'Back', temoignages_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Prenom:</b>
+  <%= @devenir_franchise.prenom %>
+</p>
+
+<p>
+  <b>Nom:</b>
+  <%= @devenir_franchise.nom %>
+</p>
+
+<p>
+  <b>Ville:</b>
+  <%= @devenir_franchise.ville %>
+</p>
+
+<p>
+  <b>Departement:</b>
+  <%= @devenir_franchise.departement %>
+</p>
+
+<p>
+  <b>Tel:</b>
+  <%= @devenir_franchise.tel %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @devenir_franchise.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_devenir_franchise_path(@devenir_franchise) %> |
+<%= link_to 'Back', devenir_franchises_path %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titre:</b>
+  <%= @prepaconcoursecole.titre %>
+</p>
+
+<p>
+  <b>Soustitre:</b>
+  <%= @prepaconcoursecole.soustitre %>
+</p>
+
+<p>
+  <b>Heure:</b>
+  <%= @prepaconcoursecole.heure %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @prepaconcoursecole.description %>
+</p>
+
+<p>
+  <b>Prix:</b>
+  <%= @prepaconcoursecole.prix %>
+</p>
+
+<p>
+  <b>Franchiseid:</b>
+  <%= @prepaconcoursecole.franchiseid %>
+</p>
+
+<p>
+  <b>Concoursid:</b>
+  <%= @prepaconcoursecole.concoursid %>
+</p>
+
+
+<%= link_to 'Edit', edit_prepaconcoursecole_path(@prepaconcoursecole) %> |
+<%= link_to 'Back', prepaconcoursecoles_path %>

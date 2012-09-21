@@ -1,0 +1,2 @@
+module PrepaconcoursecolesHelper
+end

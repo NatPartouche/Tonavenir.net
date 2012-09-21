@@ -1,0 +1,35 @@
+<h1>Listing prepaconcoursecoles</h1>
+
+<table>
+  <tr>
+    <th>Titre</th>
+    <th>Soustitre</th>
+    <th>Heure</th>
+    <th>Description</th>
+    <th>Prix</th>
+    <th>Franchiseid</th>
+    <th>Concoursid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prepaconcoursecoles.each do |prepaconcoursecole| %>
+  <tr>
+    <td><%= prepaconcoursecole.titre %></td>
+    <td><%= prepaconcoursecole.soustitre %></td>
+    <td><%= prepaconcoursecole.heure %></td>
+    <td><%= prepaconcoursecole.description %></td>
+    <td><%= prepaconcoursecole.prix %></td>
+    <td><%= prepaconcoursecole.franchiseid %></td>
+    <td><%= prepaconcoursecole.concoursid %></td>
+    <td><%= link_to 'Show', prepaconcoursecole %></td>
+    <td><%= link_to 'Edit', edit_prepaconcoursecole_path(prepaconcoursecole) %></td>
+    <td><%= link_to 'Destroy', prepaconcoursecole, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Prepaconcoursecole', new_prepaconcoursecole_path %>

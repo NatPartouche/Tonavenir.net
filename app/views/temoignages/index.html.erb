@@ -1,0 +1,29 @@
+<h1>Listing temoignages</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Fbid</th>
+    <th>Message</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @temoignages.each do |temoignage| %>
+  <tr>
+    <td><%= temoignage.nom %></td>
+    <td><%= temoignage.prenom %></td>
+    <td><%= temoignage.fbid %></td>
+    <td><%= temoignage.message %></td>
+    <td><%= link_to 'Show', temoignage %></td>
+    <td><%= link_to 'Edit', edit_temoignage_path(temoignage) %></td>
+    <td><%= link_to 'Destroy', temoignage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Temoignage', new_temoignage_path %>

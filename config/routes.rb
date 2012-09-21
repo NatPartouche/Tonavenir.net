@@ -1,4 +1,40 @@
 TonAvenirNet::Application.routes.draw do
+  resources :article_presses
+
+  get "nos_services_tonavenir/index"
+
+  get "accueil_tonavenir/index"
+
+  get "espace_temoignage_tonavenir/index"
+
+  get "espace_presse_tonavenir/index"
+
+  get "nous_contacter_tonavenir/index"
+
+  get "franchise_ton_avenir/index"
+
+  get "devenir_franchise_tonavenir/index"
+
+  get "nos_offres_tonavenir/index"
+
+  resources :concours
+
+  resources :temoignages
+
+  resources :inscriptionprepaconcours
+
+  resources :prepaconcoursecoles
+
+  resources :packs
+
+  resources :etapes
+
+  resources :banieres
+
+  resources :franchises
+
+  resources :devenir_franchises
+
   resources :users
 
   # The priority is based upon order of creation:

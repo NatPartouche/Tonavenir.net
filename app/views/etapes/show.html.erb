@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titre:</b>
+  <%= @etape.titre %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @etape.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_etape_path(@etape) %> |
+<%= link_to 'Back', etapes_path %>

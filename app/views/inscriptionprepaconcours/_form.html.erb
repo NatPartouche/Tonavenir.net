@@ -1,0 +1,49 @@
+<%= form_for(@inscriptionprepaconcour) do |f| %>
+  <% if @inscriptionprepaconcour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inscriptionprepaconcour.errors.count, "error") %> prohibited this inscriptionprepaconcour from being saved:</h2>
+
+      <ul>
+      <% @inscriptionprepaconcour.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :prenom %><br />
+    <%= f.text_field :prenom %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %><br />
+    <%= f.text_field :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :sectionbac %><br />
+    <%= f.text_field :sectionbac %>
+  </div>
+  <div class="field">
+    <%= f.label :concoursenvisages %><br />
+    <%= f.text_field :concoursenvisages %>
+  </div>
+  <div class="field">
+    <%= f.label :message %><br />
+    <%= f.text_field :message %>
+  </div>
+  <div class="field">
+    <%= f.label :prepaconcoursid %><br />
+    <%= f.text_field :prepaconcoursid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

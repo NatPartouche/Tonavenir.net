@@ -1,0 +1,2 @@
+module EspacePresseTonavenirHelper
+end

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titre:</b>
+  <%= @concour.titre %>
+</p>
+
+<p>
+  <b>Soustitre:</b>
+  <%= @concour.soustitre %>
+</p>
+
+
+<%= link_to 'Edit', edit_concour_path(@concour) %> |
+<%= link_to 'Back', concours_path %>

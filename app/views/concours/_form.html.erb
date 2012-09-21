@@ -1,0 +1,25 @@
+<%= form_for(@concour) do |f| %>
+  <% if @concour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@concour.errors.count, "error") %> prohibited this concour from being saved:</h2>
+
+      <ul>
+      <% @concour.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titre %><br />
+    <%= f.text_field :titre %>
+  </div>
+  <div class="field">
+    <%= f.label :soustitre %><br />
+    <%= f.text_field :soustitre %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

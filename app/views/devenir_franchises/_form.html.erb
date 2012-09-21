@@ -1,0 +1,41 @@
+<%= form_for(@devenir_franchise) do |f| %>
+  <% if @devenir_franchise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@devenir_franchise.errors.count, "error") %> prohibited this devenir_franchise from being saved:</h2>
+
+      <ul>
+      <% @devenir_franchise.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :prenom %><br />
+    <%= f.text_field :prenom %>
+  </div>
+  <div class="field">
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :ville %><br />
+    <%= f.text_field :ville %>
+  </div>
+  <div class="field">
+    <%= f.label :departement %><br />
+    <%= f.text_field :departement %>
+  </div>
+  <div class="field">
+    <%= f.label :tel %><br />
+    <%= f.text_field :tel %>
+  </div>
+  <div class="field">
+    <%= f.label :message %><br />
+    <%= f.text_field :message %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

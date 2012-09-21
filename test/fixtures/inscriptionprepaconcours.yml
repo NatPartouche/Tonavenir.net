@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nom: MyString
+  prenom: MyString
+  mail: MyString
+  telephone: MyString
+  sectionbac: MyString
+  concoursenvisages: MyString
+  message: MyString
+  prepaconcoursid: MyString
+
+two:
+  nom: MyString
+  prenom: MyString
+  mail: MyString
+  telephone: MyString
+  sectionbac: MyString
+  concoursenvisages: MyString
+  message: MyString
+  prepaconcoursid: MyString

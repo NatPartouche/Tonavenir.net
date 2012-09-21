@@ -1,0 +1,45 @@
+<%= form_for(@prepaconcoursecole) do |f| %>
+  <% if @prepaconcoursecole.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prepaconcoursecole.errors.count, "error") %> prohibited this prepaconcoursecole from being saved:</h2>
+
+      <ul>
+      <% @prepaconcoursecole.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titre %><br />
+    <%= f.text_field :titre %>
+  </div>
+  <div class="field">
+    <%= f.label :soustitre %><br />
+    <%= f.text_field :soustitre %>
+  </div>
+  <div class="field">
+    <%= f.label :heure %><br />
+    <%= f.text_field :heure %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :prix %><br />
+    <%= f.text_field :prix %>
+  </div>
+  <div class="field">
+    <%= f.label :franchiseid %><br />
+    <%= f.text_field :franchiseid %>
+  </div>
+  <div class="field">
+    <%= f.label :concoursid %><br />
+    <%= f.text_field :concoursid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

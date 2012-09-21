@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  titre: MyString
+  soustitre: MyString
+  heure: MyString
+  description: MyString
+  prix: MyString
+  franchiseid: MyString
+  concoursid: MyString
+
+two:
+  titre: MyString
+  soustitre: MyString
+  heure: MyString
+  description: MyString
+  prix: MyString
+  franchiseid: MyString
+  concoursid: MyString

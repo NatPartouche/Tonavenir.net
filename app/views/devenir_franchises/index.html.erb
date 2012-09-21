@@ -1,0 +1,33 @@
+<h1>Listing devenir_franchises</h1>
+
+<table>
+  <tr>
+    <th>Prenom</th>
+    <th>Nom</th>
+    <th>Ville</th>
+    <th>Departement</th>
+    <th>Tel</th>
+    <th>Message</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @devenir_franchises.each do |devenir_franchise| %>
+  <tr>
+    <td><%= devenir_franchise.prenom %></td>
+    <td><%= devenir_franchise.nom %></td>
+    <td><%= devenir_franchise.ville %></td>
+    <td><%= devenir_franchise.departement %></td>
+    <td><%= devenir_franchise.tel %></td>
+    <td><%= devenir_franchise.message %></td>
+    <td><%= link_to 'Show', devenir_franchise %></td>
+    <td><%= link_to 'Edit', edit_devenir_franchise_path(devenir_franchise) %></td>
+    <td><%= link_to 'Destroy', devenir_franchise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Devenir franchise', new_devenir_franchise_path %>
