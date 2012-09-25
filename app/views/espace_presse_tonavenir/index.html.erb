@@ -1,2 +1,26 @@
 <h1>EspacePresseTonavenir#index</h1>
 <p>Find me in app/views/espace_presse_tonavenir/index.html.erb</p>
+
+
+
+<table>
+  <tr>
+    <th>Titre</th>
+    <th>Journal</th>
+    <th>Date</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @article_presses.each do |article_press| %>
+  <tr>
+    <td><%= article_press.titre %></td>
+    <td><%= article_press.journal %></td>
+    <td><%= article_press.date %></td>
+    <td><%= article_press.description %></td>
+    <td><%= link_to 'Show', article_press %></td>
+  </tr>
+<% end %>
+</table>

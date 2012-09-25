@@ -22,15 +22,37 @@
 	<a href="../article_presses">Presse</a>
 	</br></br>
 	
+	
+	
+	
+	<table>
+	  <tr>
+	    <th>Titre</th>
+	    <th>Description</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+	
+	<% @banieres=Baniere.all%>
+	<% @banieres.each do |baniere| %>
+	  <tr>
+	    <td><%= baniere.titre %></td>
+	    <td><%= baniere.description %></td>
+	    <td><%= image_tag baniere.photo.url %></td>
+	  </tr>
+	<% end %>
+	</table>
+	
+	
 	Pages du site
-	<a href="../franchise_ton_avenir/index">franchise</a>
-	<a href="../nos_offres_tonavenir/index">Offres</a>
-	<a href="../franchise_ton_avenir/index">Francises</a>
-	<a href="../nos_services_tonavenir/index">Nos services</a>
-	<a href="../nos_offres_tonavenir/index">Nos offres</a>
-	<a href="../espace_temoignage_tonavenir/index">Temoignage</a>
-	<a href="../espace_presse_tonavenir/index">Presse</a>
-	<a href="../nous_contacter_tonavenir/index">Contact</a>
+	<a href="">Accueil</a>
+	<a href="../../franchise_ton_avenir/index">Franchisés</a>
+	<a href="../../nos_services_tonavenir/index">Nos services</a>
+	<a href="../../nos_offres_tonavenir/index">Nos offres</a>
+	<a href="../../espace_temoignage_tonavenir/index">Temoignage</a>
+	<a href="../../espace_presse_tonavenir/index">Presse</a>
+	<a href="../../nous_contacter_tonavenir/index">Contact</a>
 	
 	</br></br>
 <%= yield %>

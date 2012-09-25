@@ -1,2 +1,24 @@
 <h1>NosOffresTonavenir#index</h1>
 <p>Find me in app/views/nos_offres_tonavenir/index.html.erb</p>
+
+
+
+<table>
+  <tr>
+    <th>Titre</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @packs.each do |pack| %>
+  <tr>
+    <td><%= pack.titre %></td>
+    <td><%= pack.description %></td>
+    <td><%= link_to 'Show', pack %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

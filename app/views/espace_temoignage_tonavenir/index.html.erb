@@ -1,2 +1,23 @@
 <h1>EspaceTemoignageTonavenir#index</h1>
 <p>Find me in app/views/espace_temoignage_tonavenir/index.html.erb</p>
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Fbid</th>
+    <th>Message</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @temoignages.each do |temoignage| %>
+  <tr>
+    <td><%= temoignage.nom %></td>
+    <td><%= temoignage.prenom %></td>
+    <td><%= temoignage.fbid %></td>
+    <td><%= temoignage.message %></td>
+    <td><%= link_to 'Show', temoignage %></td>
+  </tr>
+<% end %>
+</table>
